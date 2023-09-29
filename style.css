@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing:border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.img-monstruo {
+    margin: 0 auto;
+}
+.login {
+    height: 60vh;
+    position: absolute;
+    margin: 0 auto;
+
+}
+.formulario {
+    border: 5px solid #8f4790;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+   transform: translateY(-50%);
+}
+.formulario input  {
+    border: 2px solid #8f4790;
+    border-radius: 10px;
+}
+
+.div-btn .custom-button {
+    background-color: #824283;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    box-shadow: 1px 1px 2px #000;
+
+
+}
+.div-btn .custom-button:hover {
+    background-color:  #8f4790;
+    color: #fff;
+}
