@@ -2,6 +2,7 @@ const monster = document.getElementById('monster');
 const inputEmail = document.querySelector('.input-email');
 const inputClave = document.querySelector('.input-clave');
 const body = document.querySelector('body');
+const icon = document.querySelector('.bx')
 const anchoMitad = window.innerWidth/2;
 const altoMitad = window.innerHeight/2;
 let seguirPunteroMouse = true;
@@ -65,3 +66,40 @@ inputClave.addEventListener ('blur', ()=> {
         }
     },60)
 })
+
+// CLAVE SHADOW
+let mostrandoContraseña = false;
+
+icon.addEventListener("click", () => {
+    if (!mostrandoContraseña) {
+        inputClave.type = "text";
+        icon.classList.remove('bx-show-alt');
+        icon.classList.add('bx-hide');
+
+        let count = 8;
+        const espiarOjo = setInterval(() => {
+            monster.src = "img/cover/" + count + ".png";
+            if (count > 5) {
+                count--;
+            } else {
+                clearInterval(espiarOjo);
+                mostrandoContraseña = true;
+            }
+        }, 60);
+    } else {
+        let count = 5;
+        const taparOjo = setInterval(() => {
+            monster.src = "img/cover/" + count + ".png";
+            if (count < 8) {
+                count++;
+            } else {
+                clearInterval(taparOjo);
+                inputClave.type = "password";
+                icon.classList.remove('bx-hide');
+                icon.classList.add('bx-show-alt');
+                mostrandoContraseña = false;
+            }
+        }, 60);
+    }
+});
+

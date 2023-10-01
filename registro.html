@@ -19,8 +19,8 @@
 
   <body class="bg-dark">
     <div class="container">
-      <form class=" row formulario mx-auto"  style="width: 40%; height:100vh;">
-        <div class="mb-3 col-md-12 mx-auto text-center">
+      <form class="row mx-auto mt-2 formulario" style="width: 40%; height:100vh;">
+        <div class="mb-3 col-md-12 mx-auto text-center cont-img">
           <img
             src="./img/idle/1.png"
             alt="img-monstruo"
@@ -29,33 +29,41 @@
           />
         </div>
 
-        <div class="login">
-          <div class="mb-3 col-md-12 mx-auto">
-            <label for="exampleInputEmail1" class="form-label">Email </label>
+        <div class="register">
+          <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">Email</label>
             <input
               type="email"
-              class="input-email form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              class="form-control input-email"
               placeholder="juan@example.com"
+              id="inputEmail4"
             />
           </div>
 
-          <div class="col-md-12 mx-auto">
-            <label for="exampleInputPassword1" class="form-label">
-              Contraseña
-            </label>
+          <div class="col-md-12">
+            <label for="inputUser" class="form-label">Usuario</label>
+            <input
+              type="text"
+              class="form-control input-usuario"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+
+          <div class="col-md-12">
+            <label for="inputPassword4" class="form-label">Password</label>
             <input
               type="password"
               class="form-control input-clave"
-              id="exampleInputPassword1"
+              id="inputPassword4"
             />
             <i class="bx bx-show-alt"></i>
-            <p>No tenes cuenta?</p>
+            <p>Ya tenes cuenta? Entrar</p>
           </div>
 
-          <div class="d-grid gap-2 div-btn">
-            <button class="btn custom-button" type="button">Entrar</button>
+          <div class="col-12 text-center mt-4 div-btn">
+            <button type="submit" class="btn custom-button">Registrarse</button>
           </div>
         </div>
       </form>

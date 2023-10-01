@@ -1,43 +1,90 @@
 * {
-    margin: 0;
-    padding: 0; 
-    box-sizing:border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .img-monstruo {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .login {
-    height: 60vh;
-    position: absolute;
-    margin: 0 auto;
-
-}
-.formulario {
-    border: 5px solid #8f4790;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 1em;
-    position: absolute;
-   transform: translateY(-50%);
-}
-.formulario input  {
-    border: 2px solid #8f4790;
-    border-radius: 10px;
+  border: 5px solid #8f4790;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1em;
+  transform: translateY(-40%);
 }
 
+.register {
+  border: 5px solid #8f4790;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1em;
+  transform: translateY(-35%);
+}
+.formulario input {
+  border: 2px solid #8f4790;
+  border-radius: 10px;
+}
+.bx {
+  font-size: 25px;
+  transform: translateY(-120%);
+  margin-left: 85%;
+}
 .div-btn .custom-button {
-    background-color: #824283;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    height: 40px;
-    box-shadow: 1px 1px 2px #000;
-
-
+  background-color: #824283;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  box-shadow: 1px 1px 2px #000;
 }
 .div-btn .custom-button:hover {
-    background-color:  #8f4790;
-    color: #fff;
+  background-color: #8f4790;
+  color: #fff;
+}
+/*medias queries*/
+ /*VER DE 999*/
+ 
+ @media (max-width: 990px) {
+  .register {
+    transform: translateY(-27%);
+  }
+  .login {
+    transform: translateY(-30%);
+  }
+ }
+
+@media (max-width: 768px) {
+  .img-monstruo {
+    height: 10rem;
+  }
+  .login {
+    transform: translateY(-25%);
+  }
+  .register {
+    transform: translateY(-17%);
+  }
+  .bx {
+    margin-left: 75%;
+  }
+
+}
+@media (max-width: 320px) {
+  .formulario {
+    max-height : 110vh;
+  }
+  div .img-monstruo {
+    visibility : hidden;
+  }
+  .register {
+    transform: translateY(-20%);
+  }
+  .bx {
+    visibility : hidden;
+  }
+  .div-btn .custom-button {
+    max-width: 100%;  }
+
 }
