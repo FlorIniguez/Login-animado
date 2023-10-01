@@ -19,29 +19,26 @@
 
   <body class="bg-dark">
     <div class="container">
-      <form class="row mx-auto mt-2 formulario" style="width: 40%; height:100vh;">
-        <div class="mb-3 col-md-12 mx-auto text-center cont-img">
-          <img
-            src="./img/idle/1.png"
-            alt="img-monstruo"
-            id="monster"
-            class="img-monstruo img-fluid"
-          />
-        </div>
+      <form class="row mx-auto mt-5 formulario" style="width: 50%">
+        <img
+          src="./img/idle/1.png"
+          alt="img-monstruo"
+          id="monster"
+          class="img-monstruo img-fluid"
+        />
 
         <div class="register">
-          <div class="col-md-12">
-            <label for="inputEmail4" class="form-label">Email</label>
+          <div class="mb-3 col-sm-12 col-md-11 mx-auto">
             <input
               type="email"
-              class="form-control input-email"
+              class="input-email form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
               placeholder="juan@example.com"
-              id="inputEmail4"
             />
           </div>
 
-          <div class="col-md-12">
-            <label for="inputUser" class="form-label">Usuario</label>
+          <div class="mb-3 col-md-11 col-sm-12 mx-auto">
             <input
               type="text"
               class="form-control input-usuario"
@@ -51,19 +48,19 @@
             />
           </div>
 
-          <div class="col-md-12">
-            <label for="inputPassword4" class="form-label">Password</label>
+          <div class="col-md-11 col-sm-12 mx-auto">
             <input
               type="password"
               class="form-control input-clave"
               id="inputPassword4"
+              placeholder="Contraseña"
             />
             <i class="bx bx-show-alt"></i>
             <p>Ya tenes cuenta? Entrar</p>
           </div>
 
-          <div class="col-12 text-center mt-4 div-btn">
-            <button type="submit" class="btn custom-button">Registrarse</button>
+          <div class="div-btn text-center">
+            <button type="submit" class="btn custom-button">Registrar</button>
           </div>
         </div>
       </form>

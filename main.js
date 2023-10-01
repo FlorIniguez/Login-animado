@@ -1,6 +1,7 @@
 const monster = document.getElementById('monster');
 const inputEmail = document.querySelector('.input-email');
 const inputClave = document.querySelector('.input-clave');
+const inputUsuario = document.querySelector('.input-usuario');
 const body = document.querySelector('body');
 const icon = document.querySelector('.bx')
 const anchoMitad = window.innerWidth/2;
@@ -22,7 +23,7 @@ body.addEventListener('mousemove', (m)=>{
     }
     }
 })
-
+//SEGUIR ESCRITURA MAIL
 inputEmail.addEventListener('focus', ()=>{
     seguirPunteroMouse = false;
 })
@@ -36,6 +37,25 @@ inputEmail.addEventListener('keyup', ()=>{
     } else if (email >= 6 && email <= 14) {
         monster.src = "img/read/2.png"
     }else if (email >= 15 && email <= 20) {
+        monster.src = "img/read/3.png"
+    } else {
+        monster.src = "img/read/4.png"
+    }
+})
+//SEGUIR ESCRITURA USER
+inputUsuario.addEventListener('focus', ()=>{
+    seguirPunteroMouse = false;
+})
+inputUsuario.addEventListener('blur', ()=>{
+    seguirPunteroMouse = true;
+})
+inputUsuario.addEventListener('keyup', ()=>{
+    let user = inputUsuario.value.length;
+    if(user >= 0 && user <= 5) {
+        monster.src = "img/read/1.png"
+    } else if (user >= 6 && user <= 14) {
+        monster.src = "img/read/2.png"
+    }else if (user >= 15 && user <= 20) {
         monster.src = "img/read/3.png"
     } else {
         monster.src = "img/read/4.png"
@@ -76,7 +96,7 @@ icon.addEventListener("click", () => {
         icon.classList.remove('bx-show-alt');
         icon.classList.add('bx-hide');
 
-        let count = 8;
+        let count = 7;
         const espiarOjo = setInterval(() => {
             monster.src = "img/cover/" + count + ".png";
             if (count > 5) {
@@ -85,7 +105,7 @@ icon.addEventListener("click", () => {
                 clearInterval(espiarOjo);
                 mostrandoContraseña = true;
             }
-        }, 60);
+        }, 70);
     } else {
         let count = 5;
         const taparOjo = setInterval(() => {
@@ -99,7 +119,7 @@ icon.addEventListener("click", () => {
                 icon.classList.add('bx-show-alt');
                 mostrandoContraseña = false;
             }
-        }, 60);
+        }, 70);
     }
 });
 
