@@ -7,10 +7,33 @@
 .logo {
   width: 20%;
 }
-.img-portada {
-  height: 80vh;
+.titulo {
+  background-image: url(./imgs/banner2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 12rem;
   width: 100%;
+  font-size: 5rem;
 }
+/* .img-portada  {
+  height: 30vh;
+
+} */
+.tematicas-titulo {
+  color: #fff;
+  /* background-color: #824283; */
+  background: rgb(118, 19, 194);
+  background: linear-gradient(
+    90deg,
+    rgba(118, 19, 194, 1) 0%,
+    rgba(62, 1, 92, 1) 35%,
+    rgba(100, 32, 187, 1) 100%
+  );
+  padding: 1em;
+  margin: auto;
+}
+
 .card .btn-index {
   width: 60%;
   background-color: #824283;
@@ -19,14 +42,34 @@
   border: none;
   height: 40px;
 }
-/* .main2 {
-    background-image: url(./imgs/body1.jpg);
-    background-size: cover;
+.card-box {
+  object-fit: contain;
+  border: none;
+  border-radius: 5px;
+  
+  /* -webkit-box-shadow: 10px 10px 13px -5px rgba(102,102,102,1);
+  -moz-box-shadow: 10px 10px 13px -5px rgba(102,102,102,1);
+  box-shadow: 10px 10px 13px -5px rgba(102,102,102,1); */
+  
+}
+.card-box img {
+ object-fit: cover; 
+}
+.card .card-body {
+  margin: 0.1em;
+}
+body {
+  background-image: url(./imgs/sombras.jpeg);
+  /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 60vh;
-    margin: auto;
-} */
+    margin: auto; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 .contenedor__todo {
   max-width: 100%;
@@ -44,7 +87,7 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   /* background-color: rgba(196, 76, 226, 0.548); */
-  background-color: rgba(0, 128, 255, 0.5);
+  background-color: rgba(195, 0, 255, 0.5);
 }
 
 .caja__trasera div {
@@ -82,17 +125,17 @@
 
 .caja__trasera button:hover {
   background: #fff;
-  color: #46a2fd;
+  color: #b446fd;
 }
-.fondo-contacto {
-    background-image: url(./imgs/it.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 85vh;
-      margin: auto;
-  
-  }
+
+.carou-principal {
+  max-width: 100%;
+  margin: auto;
+}
+.imgs-carou img {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 856px) {
   .caja__trasera {
     display: flex;

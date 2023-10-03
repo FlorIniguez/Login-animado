@@ -42,7 +42,15 @@
   background-color: #8f4790;
   color: #fff;
 }
+.fondo-contacto {
+  background-image: url(../imgs/fondo-it.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  padding: 2em;
 
+}
 @media (max-width: 992px) {
   .formulario .img-monstruo {
     height: 10rem;
