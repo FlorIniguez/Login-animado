@@ -7,6 +7,11 @@
 .logo {
   width: 30%;
 }
+.barra-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
 body {
   background-image: url(./imgs/fondo-lapida.jpg);
   background-size: cover;
@@ -18,7 +23,6 @@ body {
 .tematicas-titulo {
   font-family: 'Caveat Brush', cursive;
   font-size: 3rem;
-  letter-spacing: 2px;
   color: #fff;
   background: rgb(118, 19, 194);
   background: linear-gradient(
@@ -142,5 +146,18 @@ video {
   }
   video {
    margin-top: 2em;
+  }
+  .logo {
+    width: 20%;
+  }
+}
+@media (max-width: 425px) {
+  .logo-none{
+    display: none; 
+  }
+}
+@media (max-width: 320px) {
+  .tematicas-titulo {
+    font-size: 2rem;
   }
 }
