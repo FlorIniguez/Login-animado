@@ -44,19 +44,21 @@ inputEmail.addEventListener('keyup', ()=>{
 })
 //SEGUIR ESCRITURA USER
 
-inputUsuario.addEventListener('input', () => {
-    let usuarioLength = inputUsuario.value.length;
+// inputUsuario.addEventListener('input', () => {
+//     let usuarioLength = inputUsuario.value.length;
 
-    if (usuarioLength >= 0 && usuarioLength <= 5) {
-        monster.src = "img/read/1.png";
-    } else if (usuarioLength >= 6 && usuarioLength <= 14) {
-        monster.src = "img/read/2.png";
-    } else if (usuarioLength >= 15 && usuarioLength <= 20) {
-        monster.src = "img/read/3.png";
-    } else {
-        monster.src = "img/read/4.png";
-    }
-});
+//     if (usuarioLength >= 0 && usuarioLength <= 5) {
+//         monster.src = "img/read/1.png";
+//     } else if (usuarioLength >= 6 && usuarioLength <= 14) {
+//         monster.src = "img/read/2.png";
+//     } else if (usuarioLength >= 15 && usuarioLength <= 20) {
+//         monster.src = "img/read/3.png";
+//     } else {
+//         monster.src = "img/read/4.png";
+//     }
+// });
+
+//contrase
 inputClave.addEventListener ('focus', ()=> {
     seguirPunteroMouse = false;
     let count = 1;
