@@ -150,14 +150,14 @@ video {
   .logo {
     width: 20%;
   }
+  .tematicas-titulo {
+    font-size: 1.5rem;
+    padding: 0.1;
+  }
 }
-@media (max-width: 425px) {
+@media (max-width: 440px) {
   .logo-none{
     display: none; 
   }
 }
-@media (max-width: 320px) {
-  .tematicas-titulo {
-    font-size: 2rem;
-  }
-}
+
