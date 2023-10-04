@@ -4,14 +4,6 @@
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.logo {
-  width: 30%;
-}
-.barra-nav {
-  display: flex;
-  justify-content: space-around;
-}
-
 body {
   background-image: url(./imgs/fondo-lapida.jpg);
   background-size: cover;
@@ -20,6 +12,16 @@ body {
   background-attachment: fixed;
 }
 
+/*NAV*/
+.logo {
+  width: 30%;
+}
+.barra-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* tITULOS */
 .tematicas-titulo {
   font-family: 'Caveat Brush', cursive;
   font-size: 3rem;
@@ -35,6 +37,7 @@ body {
   margin: auto;
 }
 
+/* CARDS*/ 
 .card .btn-index {
   width: 60%;
   background-color: #824283;
@@ -62,7 +65,7 @@ body {
 .card .card-body {
   margin: 0.1em;
 }
-
+/*SECTION LOGIN Y REGISTER */
 .contenedor_todo {
   max-width: 100%;
   margin: auto;
@@ -102,7 +105,7 @@ body {
 }
 
 .caja_trasera button {
-  padding: 10px 40px;
+  padding: 10px 30px;
   border: 2px solid #fff;
   font-size: 14px;
   background: transparent;
@@ -117,7 +120,7 @@ body {
   background: #fff;
   color: #b446fd;
 }
-
+/* CAROUSEL */
 .carou-principal {
   max-width: 100%;
   margin: auto;
@@ -128,9 +131,36 @@ body {
 video {
   max-width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9; /* Ejemplo: relación de aspecto 16:9 */
+  aspect-ratio: 16 / 9;
 }
 
+/* FOOTER*/
+/* .fa-facebook {
+  color: blue;
+  font-size: 1.2em;
+} */
+
+.fa-instagram {
+  color: rgb(228, 82, 107);
+  /* font-size: 1.2em; */
+}
+
+/* .fa-whatsapp {
+  color: green;
+  font-size: 1.2em;
+} */
+
+/* .fa-youtube {
+  color: red;
+  font-size: 1.2em;
+} */
+
+.fa-location-dot {
+  color: blueviolet;
+}
+.footer a:hover {
+  font-size: 1.5em;
+}
 @media screen and (max-width: 856px) {
   .caja_trasera {
     width: 100%;
@@ -154,10 +184,16 @@ video {
     font-size: 1.5rem;
     padding: 0.1;
   }
+  .footer a p {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 440px) {
   .logo-none{
     display: none; 
+  }
+  .footer a p {
+    display: none;
   }
 }
 

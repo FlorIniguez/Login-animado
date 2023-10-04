@@ -99,6 +99,9 @@
   .login {
     transform: translateY(-5%);
   }
+  .logo-none{
+    display: none;
+}
 }
 @media (max-width: 320px) {
   .formulario .img-monstruo {
@@ -118,4 +121,5 @@
   .register {
     transform: translateY(-5%);
   }
+
 }

@@ -1,13 +1,13 @@
 //--------INDEX-----------------
-document
-  .getElementById("btn__iniciar-sesion")
-  .addEventListener("click", function () {
+const iniciarSesion = document.getElementById("btn__iniciar-sesion")
+const regitrarse = document.getElementById("btn__registrarse")  
+
+iniciarSesion.addEventListener("click", function () {
     window.location.href = "pages/login.html";
   });
 
-document
-  .getElementById("btn__registrarse")
-  .addEventListener("click", function () {
+
+  regitrarse.addEventListener("click", function () {
     window.location.href = "pages/registro.html";
   });
 
