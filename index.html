@@ -11,17 +11,21 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+        class="navbar navbar-expand-lg fixed-top bg-dark border-bottom border-body"
         data-bs-theme="dark"
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="./imgs/logo1.png" alt="logo" class="logo" />
+            <img src="./imgs/logo-blanco.png" alt="logo" class="logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -40,37 +44,34 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Contrataciones </a>
+                <a class="nav-link" href="#id-fiestas"> Contrataciones </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/contacto.html"> Contacto </a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/login.html"> Ingresar </a>
+              </li>
             </ul>
-            <span class="navbar-text mx-auto"> No Respires! </span>
+            <span class="navbar-text mx-auto"> ¡Bienvenidos al horror! </span>
           </div>
         </div>
       </nav>
     </header>
+    <section>
+      <img
+        src="./imgs/No.png"
+        alt="banner-no respires"
+        class="w-100 img-portada"
+      />
+    </section>
 
-  
-   
-    <img
-  src="./imgs/No.png"
-  alt="banner-no respires"
-  class="w-100 img-portada"
-/>
-    <div class="container-fluid">
-     </div>
     <main class="mb-5">
-      <!-- <img
-        src="./imgs/sombras.jpeg"
-        alt="imagen-terror"
-        class="img-portada img-fluid"
-      /> -->
-    
-        <h3 class="text-center fw-bold tematicas-titulo text-center">Estas preparado para el terror?</h3>
-     
-     
+      <h3 class="text-center fw-bold tematicas-titulo text-center">
+        Estas preparado para el terror?
+      </h3>
+
       <div class="container">
         <div
           id="carouselExampleAutoplaying"
@@ -80,9 +81,9 @@
           <div class="carousel-inner imgs-carou">
             <div class="carousel-item active">
               <img
-                src="./imgs/alien3.jpeg"
+                src="./imgs/zombie.jpeg"
                 class="d-block w-100"
-                alt="img-aliens"
+                alt="img-zombie"
               />
             </div>
             <div class="carousel-item">
@@ -101,9 +102,9 @@
             </div>
             <div class="carousel-item">
               <img
-                src="./imgs/zombie.jpeg"
+                src="./imgs/alien3.jpeg"
                 class="d-block w-100"
-                alt="zombies"
+                alt="aliens-foto"
               />
             </div>
           </div>
@@ -129,16 +130,43 @@
       </div>
     </main>
 
+    <main class="mt-2 mb-3">
+      <h3 class="text-center fw-bold tematicas-titulo text-center mb-4">
+        Animaciones infantiles y adultos
+      </h3>
+      <div
+        class="container-fluid d-flex justify-content-evenly align-items-center flex-wrap"
+      >
+        <section>
+          <img src="./imgs/fiestas.jpeg" alt="flyer" style="height: 25rem" />
+        </section>
+        <section>
+          <video width="640" height="360" controls autoplay muted>
+            <source
+              src="./imgs/video-muestra.mp4"
+              type="video/mp4"
+            />
+
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </section>
+      </div>
+    </main>
+
     <main>
-      <div class="container-fluid tematicas-titulo text-center mb-5">
-      <h3 class="text-center fw-bold">Algunas de las temáticas</h3>
-    </div>
+      <h3 id="id-fiestas" class="text-center tematicas-titulo mb-4  fw-bold">
+        Algunas de las temáticas
+      </h3>
+
       <div
         class="container d-flex justify-content-evenly flex-wrap contenedor-cards"
       >
-        <div class="card card-box text-center mb-4" style="width: 18rem">
+        <div
+          class="card card-box text-center bg-black text-light mb-4"
+          style="width: 18rem"
+        >
           <img
-            src="./imgs/aliens.jpeg"
+            src="./imgs/zombiess.jpg"
             class="card-img-top img-fluid"
             alt="..."
             style="height: 13rem"
@@ -152,15 +180,18 @@
             <a href="#" class="btn btn-index">Ver más</a>
           </div>
         </div>
-        <div class="card card-box text-center mb-4" style="width: 18rem">
+        <div
+          class="card card-box text-center bg-black text-light mb-4"
+          style="width: 18rem"
+        >
           <img
             src="./imgs/villanos.jpg"
             class="card-img-top img-fluid"
             alt="..."
             style="height: 13rem"
           />
-          <div class="card-body bg-black text-light">
-            <h5 class="card-title">Fiesta Villanos </h5>
+          <div class="card-body bg-black">
+            <h5 class="card-title">Fiesta Villanos</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -168,9 +199,12 @@
             <a href="#" class="btn btn-index">Ver más</a>
           </div>
         </div>
-        <div class="card card-box text-center mb-4" style="width: 18rem">
+        <div
+          class="card card-box text-center bg-black text-light mb-4"
+          style="width: 18rem"
+        >
           <img
-            src="./imgs/zombiess.jpg"
+            src="./imgs/aliens.jpeg"
             class="card-img-top img-fluid"
             alt="..."
             style="height: 13rem"
@@ -184,16 +218,19 @@
             <a href="#" class="btn btn-index">Ver más</a>
           </div>
         </div>
-        <div class="card card-box text-center mb-4" style="width: 18rem">
+        <div
+          class="card card-box text-center bg-black text-light mb-4"
+          style="width: 18rem"
+        >
           <img
             src="./imgs/it.jpg"
             class="card-img-top img-fluid"
-            alt="..."
+            alt="payas"
             style="height: 13rem"
           />
           <div class="card-body bg-black text-light">
             <h5 class="card-title">Fiesta Monstruos de película</h5>
-            <p class="card-text ">
+            <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
@@ -203,17 +240,17 @@
       </div>
     </main>
     <div class="mx-auto mt-4">
-      <img src="./imgs/separador.jpg" alt="" class="mx-auto w-100">
+      <img src="./imgs/separador.jpg" alt="" class="mx-auto w-100" />
     </div>
     <main class="main2">
-      <div class="container-fluid contenedor__todo" id="reservar">
-        <div class="caja__trasera text-center">
-          <div class="caja__trasera-login">
+      <div class="container-fluid contenedor_todo" id="reservar">
+        <div class="caja_trasera text-center">
+          <div class="caja_trasera-login">
             <h3>¿Ya tienes una cuenta?</h3>
             <p>Inicia sesión para entrar en la página</p>
             <button id="btn__iniciar-sesion">Iniciar Sesión</button>
           </div>
-          <div class="caja__trasera-register">
+          <div class="caja_trasera-register">
             <h3>¿Aún no tienes una cuenta?</h3>
             <p>Regístrate para que puedas iniciar sesión</p>
             <button id="btn__registrarse">Regístrarse</button>
@@ -226,6 +263,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="./main.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -21,7 +21,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"> <img src="../imgs/logo1.png" alt="logo" class="logo"> </a>
+          <a class="navbar-brand" href="../index.html"> <img src="../imgs/logo-ojo.png" alt="logo" class="logo"> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,18 +31,22 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Contrataciones </a>
+                <a class="nav-link" href="../index.html#id-fiestas"> Contrataciones </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/contacto.html"> Contacto </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"> Ingresar </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="container-fluid mt-5">
-      <form class="row formulario mx-auto">
+
+    <div class="container-fluid d-grid align-content-center contenedor-login-register">
+      <form class="row formulario mx-auto mt-5">
         <img
           src="./img/idle/1.png"
           alt="img-monstruo"
@@ -68,11 +72,12 @@
               id="exampleInputPassword1"
               placeholder="contraseña"
             />
-            <i class="bx bx-show-alt"></i>
+            <i class="bx bx-show-alt mb-0"></i>
           </div>
-
+          
           <div class="div-btn text-center">
             <button class="btn custom-button" type="button">Entrar</button>
+            <p class="mt-1">No tenes cuenta? <a href="./registro.html" class="fw-bold login-register"> Registrate </a></p>
           </div>
         </div>
       </form>

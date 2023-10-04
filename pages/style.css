@@ -5,7 +5,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .logo {
-  width: 20%;
+  width: 30%;
 }
 .formulario {
   width: 40%;
@@ -14,12 +14,22 @@
   border-radius: 10px;
   padding: 1em;
 }
+.contenedor-login-register {
+  height: 90vh;
+}
 .formulario .img-monstruo {
   height: 12rem;
   width: 17rem;
   margin: 0 auto;
 }
+.div-btn .login-register {
+  text-decoration: none;
+  color: #630c64;
 
+}
+.register {
+  transform: translateY(-5%);
+}
 .formulario input {
   border: 2px solid #8f4790;
   border-radius: 10px;
@@ -43,7 +53,7 @@
   color: #fff;
 }
 .fondo-contacto {
-  background-image: url(../imgs/fondo-it.jpg);
+  background-image: url(../imgs/sombras.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -51,10 +61,11 @@
   padding: 2em;
 
 }
+
 @media (max-width: 992px) {
   .formulario .img-monstruo {
     height: 10rem;
-    width: 15rem;
+    width: 14rem;
   }
 
   .register {
