@@ -135,32 +135,75 @@ video {
 }
 
 /* FOOTER*/
-/* .fa-facebook {
-  color: blue;
-  font-size: 1.2em;
-} */
+
 
 .fa-instagram {
   color: rgb(228, 82, 107);
-  /* font-size: 1.2em; */
 }
-
-/* .fa-whatsapp {
-  color: green;
-  font-size: 1.2em;
-} */
-
-/* .fa-youtube {
-  color: red;
-  font-size: 1.2em;
-} */
-
 .fa-location-dot {
   color: blueviolet;
 }
 .footer a:hover {
   font-size: 1.5em;
 }
+
+/* --------PAGES -----*/
+.formulario {
+  width: 40%;
+  border: 5px solid #8f4790;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1em;
+}
+.contenedor-login-register {
+  height: 80vh;
+}
+.formulario .img-monstruo {
+  height: 12rem;
+  width: 17rem;
+  margin: 0 auto;
+}
+.div-btn .login-register {
+  text-decoration: none;
+  color: #630c64;
+
+}
+/* .register {
+  transform: translateY(-5%);
+} */
+.formulario input {
+  border: 2px solid #8f4790;
+  border-radius: 10px;
+}
+.bx {
+  font-size: 25px;
+  transform: translateY(-120%);
+  margin-left: 85%;
+}
+.div-btn .custom-button {
+  width: 60%;
+  background-color: #824283;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  box-shadow: 1px 1px 2px #000;
+}
+.div-btn .custom-button:hover {
+  background-color: #8f4790;
+  color: #fff;
+}
+.fondo-contacto {
+  background-image: url(../imgs/sombras.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  padding: 2em;
+
+}
+
+
 @media screen and (max-width: 856px) {
   .caja_trasera {
     width: 100%;
@@ -187,13 +230,75 @@ video {
   .footer a p {
     font-size: 0.8rem;
   }
+  .formulario .img-monstruo {
+    height: 10rem;
+    width: 14rem;
+  }
+
+  .login {
+    transform: translateY(-5%);
+  }
+}
+@media (max-width: 1200px) {
+  .register {
+    transform: translateY(-5%);
+  }
+  .formulario .img-monstruo {
+    height: 7rem;
+    width: 10rem;
+  }
+
+}
+@media (max-width: 768px) {
+  .formulario {
+    width: 18rem;
+    padding: 0.1em;
+  }
+
+  .bx {
+    margin-left: 75%;
+  }
+  .formulario .img-monstruo {
+    height: 7rem;
+    width: 10rem;
+  }
+  .div-btn .custom-button {
+    width: 100%;
+    text-overflow: ellipsis;
+  }
+  .register {
+    transform: translateY(-2%);
+  }
+  .login {
+    transform: translateY(-5%);
+  }
+  .logo-none{
+    display: none;
+}
 }
 @media (max-width: 440px) {
-  .logo-none{
+  /* .logo-none{
     display: none; 
-  }
+  } */
   .footer a p {
     display: none;
   }
+  .formulario .img-monstruo {
+    height: 5rem;
+    width: 7rem;
+  }
+  .formulario {
+    width: 100%;
+  }
+  .bx {
+    visibility: hidden;
+  }
+  .div-btn .custom-button {
+    width: 100%;
+    text-overflow: ellipsis;
+  }
+  /* .register {
+    transform: translateY(-5%);
+  } */
 }
 
