@@ -136,8 +136,16 @@ function cambiarImagen(input) {
   });
 }
 
-cambiarImagen(inputEmail);
-cambiarImagen(inputUsuario);
+// cambiarImagen(inputEmail);
+// cambiarImagen(inputUsuario);
+if (inputEmail) {
+  cambiarImagen(inputEmail);
+}
+
+
+if (inputUsuario) {
+  cambiarImagen(inputUsuario);
+}
 
 //-----------INDEX-------------
 
