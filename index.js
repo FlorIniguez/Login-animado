@@ -10,6 +10,28 @@ const anchoMitad = window.innerWidth / 2;
 const altoMitad = window.innerHeight / 2;
 let seguirPunteroMouse = true;
 
+//-----------INDEX-------------
+
+// iniciarSesion.addEventListener("click", function () {
+//   window.location.href = "pages/login.html";
+// });
+
+// regitrarse.addEventListener("click", function () {
+//   window.location.href = "pages/registro.html";
+// });
+if (iniciarSesion) {
+  iniciarSesion.addEventListener("click", function () {
+    window.location.href = "pages/login.html";
+  });
+}
+
+if (regitrarse) {
+  regitrarse.addEventListener("click", function () {
+    window.location.href = "pages/registro.html";
+  });
+}
+
+
 //------- SEGUIR PUNTERO DEL MOUSE-----------
 body.addEventListener("mousemove", (m) => {
   if (seguirPunteroMouse) {
@@ -25,24 +47,6 @@ body.addEventListener("mousemove", (m) => {
   }
 });
 
-// inputEmail.addEventListener("focus", () => {
-//   seguirPunteroMouse = false;
-// });
-// inputEmail.addEventListener("blur", () => {
-//   seguirPunteroMouse = true;
-// });
-// inputEmail.addEventListener("keyup", () => {
-//   let email = inputEmail.value.length;
-//   if (email >= 0 && email <= 5) {
-//     monster.src = "img/read/1.png";
-//   } else if (email >= 6 && email <= 14) {
-//     monster.src = "img/read/2.png";
-//   } else if (email >= 15 && email <= 20) {
-//     monster.src = "img/read/3.png";
-//   } else {
-//     monster.src = "img/read/4.png";
-//   }
-// });
 
 // CONTRASEÑA
 inputClave.addEventListener("focus", () => {
@@ -147,12 +151,3 @@ if (inputUsuario) {
   cambiarImagen(inputUsuario);
 }
 
-//-----------INDEX-------------
-
-iniciarSesion.addEventListener("click", function () {
-  window.location.href = "pages/login.html";
-});
-
-regitrarse.addEventListener("click", function () {
-  window.location.href = "pages/registro.html";
-});

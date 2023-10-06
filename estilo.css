@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 body {
   background-image: url(./imgs/fondo-lapida.jpg);
@@ -22,7 +22,7 @@ body {
   justify-content: space-around;
 }
 
-/* tITULOS */
+/* tITULOS  INDEX*/
 .tematicas-titulo {
   font-family: 'Nosifer', cursive;
   letter-spacing: 3px;
@@ -39,7 +39,7 @@ body {
   margin: auto;
 }
 
-/* CARDS*/
+/* CARDS INDEX*/
 
 .card .btn-index {
   width: 60%;
@@ -74,11 +74,7 @@ body {
     transform: translate(-10px, 0);
   }
 }
-/* .card .btn-index:hover {
-  width: 90%;
-  background-color: #4d034e;
-  font-size: 1.1rem;
-} */
+
 .card-box {
   border: none;
   border-radius: 10px;
@@ -97,7 +93,8 @@ body {
   -webkit-box-shadow: 10px 10px 14px 2px rgba(178, 12, 228, 0.47);
   box-shadow: 10px 10px 14px 2px rgba(81, 1, 134, 0.47);
 } */
-/*SECTION LOGIN Y REGISTER */
+
+/*SECTION INDEX LOGIN Y REGISTER */
 .contenedor_todo {
   max-width: 100%;
   margin: auto;
@@ -111,7 +108,6 @@ body {
   align-items: center;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  /* background-color: rgba(196, 76, 226, 0.548); */
   background-color: rgba(195, 0, 255, 0.5);
 }
 
@@ -180,6 +176,8 @@ video {
 }
 
 /* --------PAGES -----*/
+
+/* LOGIN Y REGISTER */
 .formulario {
   width: 40%;
   border: 5px solid #8f4790;
@@ -227,6 +225,7 @@ video {
   background-color: #8f4790;
   color: #fff;
 }
+/* FORMULARIO CONTACTO */
 .fondo-contacto {
   background-image: url(../imgs/sombras.jpeg);
   background-size: cover;
@@ -245,7 +244,7 @@ video {
     width: 10rem;
   }
 }
-@media screen and (max-width: 856px) {
+@media (max-width: 856px) {
   .caja_trasera {
     width: 100%;
     display: flex;
@@ -268,23 +267,30 @@ video {
     font-size: 1.5rem;
     padding: 0.1;
   }
-  .footer a p {
-    font-size: 0.8rem;
+  .fondo-contacto {
+    height: 85vh ;
   }
+  
   .formulario .img-monstruo {
     height: 10rem;
     width: 14rem;
   }
 
-  .fondo-contacto {
-    height: 100vh;
-  }
   .login {
     transform: translateY(-5%);
+  }
+  .carou-principal {
+    max-width: 100%;
+  }
+  .footer a p {
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 768px) {
+  .logo-none {
+    display: none;
+  }
   .formulario {
     width: 18rem;
     padding: 0.1em;
@@ -304,28 +310,24 @@ video {
   .register {
     transform: translateY(-2%);
   }
-  /* .login {
-    transform: translateY(-5%);
-  } */
-  .logo-none {
-    display: none;
-  }
+
+ 
 }
 @media (max-width: 440px) {
-  .footer a p {
-    display: none;
+
+  .formulario {
+    width: 100%;
   }
   .formulario .img-monstruo {
     height: 5rem;
     width: 7rem;
   }
-  .formulario {
-    width: 100%;
-  }
-
   .div-btn .custom-button {
     width: 100%;
     text-overflow: ellipsis;
+  }
+  .footer a p {
+    display: none;
   }
 }
 
