@@ -5,7 +5,7 @@
   font-family: "Cinzel Decorative", "Franklin Gothic Medium", "Arial Narrow",
     Arial, sans-serif;
 }
-body {
+.body-index {
   background-image: url(./imgs/sombras.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -175,7 +175,6 @@ video {
   transition: font-size 0.3s;
 }
 
-
 /* --------PAGES -----*/
 
 /* LOGIN Y REGISTER */
@@ -236,6 +235,7 @@ video {
   padding: 2em;
 }
 
+/* ----- MEDIA QUERYS -----*/
 @media (max-width: 1200px) {
   .carou-principal {
     max-width: 100%;
@@ -247,10 +247,15 @@ video {
     height: 7rem;
     width: 10rem;
   }
+  .section-img-video .img-flyer {
+    height: 15rem;
+  }
+  .icon i {
+    left: -25%;
+  }
 }
 @media (max-width: 856px) {
   .caja_trasera {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -276,8 +281,8 @@ video {
   }
 
   .formulario .img-monstruo {
-    height: 10rem;
-    width: 14rem;
+    height: 9rem;
+    width: 13rem;
   }
 
   .login {
@@ -309,6 +314,10 @@ video {
   .register {
     transform: translateY(-2%);
   }
+  .contenedor-cards {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 420px) {
   .logo-none {
@@ -317,10 +326,6 @@ video {
 
   .formulario {
     width: 100%;
-  }
-  .formulario .img-monstruo {
-    height: 5rem;
-    width: 7rem;
   }
   .div-btn .custom-button {
     width: 100%;
