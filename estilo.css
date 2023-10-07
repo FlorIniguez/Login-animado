@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cinzel Decorative', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  font-family: "Cinzel Decorative", "Franklin Gothic Medium", "Arial Narrow",
+    Arial, sans-serif;
 }
 body {
-  background-image: url(./imgs/fondo-lapida.jpg);
+  background-image: url(./imgs/sombras.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,14 +17,10 @@ body {
 .logo {
   width: 30%;
 }
-.barra-nav {
-  display: flex;
-  justify-content: space-around;
-}
 
 /* tITULOS  INDEX*/
 .tematicas-titulo {
-  font-family: 'Nosifer', cursive;
+  font-family: "Nosifer", cursive;
   letter-spacing: 3px;
   font-size: 2.5rem;
   color: #fff;
@@ -40,7 +36,17 @@ body {
 }
 
 /* CARDS INDEX*/
-
+.contenedor-cards .card-box {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+.card-box img {
+  object-fit: cover;
+  height: 13rem;
+}
 .card .btn-index {
   width: 60%;
   background-color: #824283;
@@ -49,8 +55,12 @@ body {
   border: none;
   height: 40px;
 }
+.card .card-title {
+  color: #824283;
+}
 .card .btn-index:hover {
   background-color: #4d034e;
+  color: #fff;
   animation-name: wiggle;
   animation-duration: 0.4s;
   animation-timing-function: ease-in-out;
@@ -76,23 +86,13 @@ body {
 }
 
 .card-box {
-  border: none;
-  border-radius: 10px;
-}
-.card-box img {
-  object-fit: cover;
-}
-/* .card .card-body {
-  margin: 0.1em;
-} */
-/* .card-box{
   -webkit-transition: 1s linear;
   transition: 1s linear;
 }
-.card-box:hover{
-  -webkit-box-shadow: 10px 10px 14px 2px rgba(178, 12, 228, 0.47);
-  box-shadow: 10px 10px 14px 2px rgba(81, 1, 134, 0.47);
-} */
+.card-box:hover {
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(119, 118, 118, 0.47);
+  box-shadow: 10px 10px 14px 2px rgba(192, 188, 188, 0.47);
+}
 
 /*SECTION INDEX LOGIN Y REGISTER */
 .contenedor_todo {
@@ -150,7 +150,7 @@ body {
 }
 /* CAROUSEL */
 .carou-principal {
-  max-width: 60%;
+  max-width: 80%;
   margin: auto;
 }
 .imgs-carou img {
@@ -174,6 +174,7 @@ video {
   font-size: 1.5em;
   transition: font-size 0.3s;
 }
+
 
 /* --------PAGES -----*/
 
@@ -236,6 +237,9 @@ video {
 }
 
 @media (max-width: 1200px) {
+  .carou-principal {
+    max-width: 100%;
+  }
   .register {
     transform: translateY(-5%);
   }
@@ -268,9 +272,9 @@ video {
     padding: 0.1;
   }
   .fondo-contacto {
-    height: 85vh ;
+    height: 85vh;
   }
-  
+
   .formulario .img-monstruo {
     height: 10rem;
     width: 14rem;
@@ -279,18 +283,13 @@ video {
   .login {
     transform: translateY(-5%);
   }
-  .carou-principal {
-    max-width: 100%;
-  }
+
   .footer a p {
     font-size: 0.8rem;
   }
 }
 
 @media (max-width: 768px) {
-  .logo-none {
-    display: none;
-  }
   .formulario {
     width: 18rem;
     padding: 0.1em;
@@ -310,10 +309,11 @@ video {
   .register {
     transform: translateY(-2%);
   }
-
- 
 }
-@media (max-width: 440px) {
+@media (max-width: 420px) {
+  .logo-none {
+    display: none;
+  }
 
   .formulario {
     width: 100%;
@@ -331,8 +331,11 @@ video {
   }
 }
 
-@media (max-width: 220px) {
+@media (max-width: 320px) {
+  .logo-none {
+    display: none;
+  }
   .bx {
-    visibility: hidden;
+    display: none;
   }
 }

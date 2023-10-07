@@ -35,7 +35,7 @@
     />
   </head>
 
-  <body>
+  <body class="bg-black">
     <header>
       <nav
         class="navbar navbar-expand-lg bg-dark border-bottom border-body barra-nav fixed-top"
@@ -43,7 +43,11 @@
       >
         <div class="container-fluid">
           <a class="navbar-brand logo-none" href="index.html">
-            <img src="./imgs/logo-blanco.png" alt="logo" class="logo" />
+            <img
+              src="./imgs/logo-blanco.png"
+              alt="logo"
+              class="logo d-inline-block align-text-top"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -56,6 +60,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -146,26 +151,27 @@
         </div>
       </div>
     </main>
-    <main>
+
+    <main class="mb-5">
       <h3 id="id-fiestas" class="text-center tematicas-titulo mb-4 fw-bold">
         Animaciones temáticas
       </h3>
 
       <div
-        class="container d-flex justify-content-evenly flex-wrap contenedor-cards"
+        class="container d-flex justify-content-md-between justify-content-sm-center flex-wrap contenedor-cards"
       >
         <div
-          class="card card-box text-center bg-black text-light mb-4"
+          class="card card-box text-center  mb-4"
           style="width: 18rem"
         >
           <img
             src="./imgs/zombiess.jpg"
             class="card-img-top img-fluid"
             alt="..."
-            style="height: 13rem"
+           
           />
           <div class="card-body">
-            <h5 class="card-title">Fiesta Extraterrestre</h5>
+            <h5 class="card-title fw-bold">Fiesta Extraterrestre</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -173,18 +179,19 @@
             <a href="#" class="btn btn-index">Ver más</a>
           </div>
         </div>
+
         <div
-          class="card card-box text-center bg-black text-light mb-4"
+          class="card card-box text-center  mb-4"
           style="width: 18rem"
         >
           <img
             src="./imgs/villanos.jpg"
             class="card-img-top img-fluid"
             alt="..."
-            style="height: 13rem"
+           
           />
-          <div class="card-body bg-black">
-            <h5 class="card-title">Fiesta Villanos</h5>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Fiesta Villanos</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -192,18 +199,19 @@
             <a href="#" class="btn btn-index">Ver más</a>
           </div>
         </div>
+
         <div
-          class="card card-box text-center bg-black text-light mb-4"
+          class="card card-box text-center mb-4"
           style="width: 18rem"
         >
           <img
             src="./imgs/aliens.jpeg"
             class="card-img-top img-fluid"
             alt="..."
-            style="height: 13rem"
+           
           />
           <div class="card-body">
-            <h5 class="card-title">Fiesta Zombies</h5>
+            <h5 class="card-title fw-bold">Fiesta Zombies</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -211,18 +219,18 @@
             <a href="#" class="btn btn-index">Ver más</a>
           </div>
         </div>
+        
         <div
-          class="card card-box text-center bg-black text-light mb-4"
+          class="card card-box text-center mb-4"
           style="width: 18rem"
         >
           <img
             src="./imgs/it.jpg"
             class="card-img-top img-fluid"
             alt="payas"
-            style="height: 13rem"
           />
-          <div class="card-body bg-black text-light">
-            <h5 class="card-title">Fiesta Monstruosa</h5>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Fiesta Monstruosa</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -230,9 +238,11 @@
             <a href="#" class="btn btn-index">Ver más</a>
           </div>
         </div>
+
       </div>
     </main>
-    <main class="main2">
+
+    <main class="main2 mb-5">
       <div class="container-fluid contenedor_todo" id="reservar">
         <div class="caja_trasera text-center">
           <div class="caja_trasera-login">
@@ -248,14 +258,15 @@
         </div>
       </div>
     </main>
-    <main>
-      <h3 class="text-center fw-bold tematicas-titulo text-center mb-4">
+
+    <main class="mb-5 mt-2">
+      <h3 class="text-center fw-bold tematicas-titulo text-center">
         Animaciones para niños y adultos
       </h3>
       <div
         class="container-fluid d-flex justify-content-evenly align-items-center flex-wrap"
       >
-        <section>
+        <section class="m-sm-5">
           <img
             src="./imgs/fiestas.jpeg"
             alt="flyer"
@@ -278,7 +289,7 @@
     </div>
 
     <footer
-      class="footer container-fluid bg-dark d-flex justify-content-evenly align-items-center flex-wrap p-2"
+      class="footer container-fluid bg-dark border-bottom border-body d-flex justify-content-evenly align-items-center flex-wrap p-2"
     >
       <a
         class="btn btn-link btn-floating btn-lg text-decoration-none"
