@@ -139,13 +139,17 @@
   background: transparent;
   font-weight: 600;
   cursor: pointer;
-  color: white;
   outline: none;
   transition: all 300ms;
 }
-
+.caja_trasera button a {
+  color: #fff;
+}
 .caja_trasera button:hover {
   background: #fff;
+  color: #b446fd;
+}
+.caja_trasera button a:hover {
   color: #b446fd;
 }
 /* CAROUSEL */
