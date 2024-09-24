@@ -190,7 +190,7 @@ video {
   padding: 1em;
 }
 .contenedor-login-register {
-  height: 80vh;
+  height: 72vh;
 }
 .formulario .img-monstruo {
   height: 12rem;
@@ -338,6 +338,9 @@ video {
   .footer a p {
     display: none;
   }
+  .contenedor-login-register {
+    height: 80vh;
+  }
 }
 
 @media (max-width: 320px) {
@@ -346,5 +349,8 @@ video {
   }
   .bx {
     display: none;
+  }
+  .contenedor-login-register {
+    height: 80vh;
   }
 }
